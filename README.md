@@ -9,7 +9,7 @@
 - Выход из личного кабинета - test_exit_from_lk.py
 - Переход по начинкам, соусам и булкам - test_burger_click_on_sauce_and_other.py
 
-
+Файлы
 - Локаторы - locators.py
 - Фикстуры - conftest.py
 - Функции и переменные - function_and_variables.py

@@ -1,13 +1,8 @@
-import time
-import pytest
-from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
-from function_and_variables import random_pass_correct, random_email, random_string
 from locators import TestLocators
 from conftest import driver
-from tests.function_and_variables import random_pass_uncorrect
+from test_function_and_variables import random_pass_correct, random_email, random_string, random_pass_uncorrect
 
 
 class TestRegistration:

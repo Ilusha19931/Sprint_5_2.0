@@ -13,6 +13,7 @@ class TestLocators:
     #Вход
     URL_ENTER_LOGIN = "https://stellarburgers.nomoreparties.site/login"
     BUTTON_ENTER_LOGIN = (By.XPATH, './/button[text()="Войти"]')
+    ELEMENENT_LOGIN_CHECK_ANOTHER_PATH = (By.XPATH, "//*[contains(@class, 'button_button')]")
     ELEMENENT_LOGIN_CHECK = (By.XPATH, './/h1[text()="Соберите бургер"]')
     BUTTON_LK = (By.XPATH, './/p[text()="Личный Кабинет"]')
     BUTTON_LOGIN_FROM_REGISTRATION = (By.XPATH, './/a[text()="Войти"]')
@@ -24,7 +25,7 @@ class TestLocators:
     BUTTON_HISTORY_OF_ORDERS = (By.XPATH, './/a[text()="История заказов"]')
     BUTTON_EXIT_FROM_LK = (By.XPATH, './/button[text()="Выход"]')
     #Конструктор и лого бургера
-    BUTTON_DESIGNER = (By.XPATH, './/p[text()="Конструктор"]')
+    BUTTON_DESIGNER = (By.XPATH, '//p[contains(@class, "AppHeader_header") and text()="Конструктор"]')
     BUTTON_LOGO = (By.XPATH, '//a[@href="/"]')
     # Переходы кнопок булка, начинки и соусы
     BUTTON_ROLLS = (By.XPATH, './/span[text()="Булки"]')

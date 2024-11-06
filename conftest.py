@@ -23,4 +23,5 @@ def login_correct(driver):
     driver.find_element(*TestLocators.INPUT_PASS).send_keys(pass_login)
     WebDriverWait(driver, 10).until(expected_conditions.element_to_be_clickable(TestLocators.BUTTON_ENTER_LOGIN))
     driver.find_element(*TestLocators.BUTTON_ENTER_LOGIN).click()
-    WebDriverWait(driver, 10).until(expected_conditions.presence_of_element_located(TestLocators.ELEMENENT_LOGIN_CHECK))
+    time.sleep(2)
+    WebDriverWait(driver, 10).until(expected_conditions.presence_of_element_located(TestLocators.ELEMENENT_LOGIN_CHECK_ANOTHER_PATH))

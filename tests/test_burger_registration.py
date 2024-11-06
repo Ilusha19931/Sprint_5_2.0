@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from locators import TestLocators
 from conftest import driver
-from test_function_and_variables import random_pass_correct, random_email, random_string, random_pass_uncorrect
+from function_and_variables import random_pass_correct, random_email, random_string, random_pass_uncorrect
 
 
 class TestRegistration:

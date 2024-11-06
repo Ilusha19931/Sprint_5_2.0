@@ -2,7 +2,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from locators import TestLocators
 from conftest import driver, login_correct
-from test_function_and_variables import email_login, pass_login
+from function_and_variables import email_login, pass_login
 
 
 class TestLogin:

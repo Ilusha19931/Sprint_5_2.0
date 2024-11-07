@@ -3,7 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from locators import TestLocators
 from conftest import driver, login_correct
 
-
+#OK
 class TestTransitions:
     def test_transition_designer(self, driver, login_correct):
         driver.find_element(*TestLocators.BUTTON_LK).click()

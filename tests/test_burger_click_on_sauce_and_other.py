@@ -1,6 +1,6 @@
 from locators import TestLocators
 from conftest import driver, login_correct
-
+#ok
 class TestLK:
     def test_tap_on_sauce(self, driver, login_correct):
         driver.find_element(*TestLocators.BUTTON_SAUCE).click()

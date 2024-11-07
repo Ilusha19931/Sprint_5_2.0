@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 
 class TestLocators:
     #Регистрация
-    URL_REGISTRATION = "https://stellarburgers.nomoreparties.site/register"
     BUTTON_REGISTRATION = (By.XPATH, './/button[text()="Зарегистрироваться"]')
     INPUT_EMAIL_NAME_PASS = (By.NAME, "name")
     INPUT_PASS = (By.NAME, "Пароль")
@@ -11,13 +10,11 @@ class TestLocators:
     ALERT_OF_UNCORRECTED_PASS = (By.XPATH, "//*[contains(text(), 'Некорректный пароль')]")
 
     #Вход
-    URL_ENTER_LOGIN = "https://stellarburgers.nomoreparties.site/login"
     BUTTON_ENTER_LOGIN = (By.XPATH, './/button[text()="Войти"]')
     ELEMENENT_LOGIN_CHECK_ANOTHER_PATH = (By.XPATH, "//*[contains(@class, 'button_button')]")
     ELEMENENT_LOGIN_CHECK = (By.XPATH, './/h1[text()="Соберите бургер"]')
     BUTTON_LK = (By.XPATH, './/p[text()="Личный Кабинет"]')
     BUTTON_LOGIN_FROM_REGISTRATION = (By.XPATH, './/a[text()="Войти"]')
-    URL_RECOVER_PASS = "https://stellarburgers.nomoreparties.site/forgot-password"
     BUTTON_RECOVER_PASS = (By.XPATH, './/button[text()="Восстановить"]')
     #Личный кабинет
     TEXT_TO_ASSERT_LK =(By.XPATH, './/p[text()="В этом разделе вы можете изменить свои персональные данные"]')

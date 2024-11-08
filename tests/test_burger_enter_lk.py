@@ -3,7 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from locators import TestLocators
 from conftest import driver, login_correct
 
-#OK
+#okay
 class TestLK:
     def test_enter_lk(self, driver, login_correct):
         driver.find_element(*TestLocators.BUTTON_LK).click()

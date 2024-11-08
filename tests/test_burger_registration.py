@@ -4,7 +4,7 @@ from locators import TestLocators
 from conftest import driver
 from function_and_variables import random_pass_correct, random_email, random_string, random_pass_uncorrect
 from urls import Urls
-#OK
+#okay
 class TestRegistration:
 
     def test_register_new_correct(self, driver):

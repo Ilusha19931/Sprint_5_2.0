@@ -6,7 +6,7 @@ from locators import TestLocators
 from conftest import driver, login_correct
 from function_and_variables import email_login, pass_login
 from urls import Urls
-#OK
+#okay
 class TestLogin:
 
     def test_login_correct_from_login(self, driver, login_correct):

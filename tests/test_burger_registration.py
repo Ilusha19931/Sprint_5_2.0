@@ -18,7 +18,7 @@ class TestRegistration:
         driver.find_element(*TestLocators.BUTTON_REGISTRATION).click()
         WebDriverWait(driver,10).until(expected_conditions.element_to_be_clickable(TestLocators.BUTTON_ENTER_LOGIN))
         current_url = driver.current_url
-        expected_url = 'https://stellarburgers.nomoreparties.site/login'
+        expected_url = expected_url = Urls.URL_ENTER_LOGIN
         assert current_url == expected_url
 
     def test_register_new_uncorrect(self, driver):
@@ -32,7 +32,7 @@ class TestRegistration:
         driver.find_element(*TestLocators.BUTTON_REGISTRATION).click()
         WebDriverWait(driver,10).until(expected_conditions.element_to_be_clickable(TestLocators.BUTTON_REGISTRATION))
         current_url = driver.current_url
-        expected_url = 'https://stellarburgers.nomoreparties.site/register'
+        expected_url = Urls.URL_REGISTRATION
         assert current_url == expected_url
         error_pass = driver.find_element(*TestLocators.ALERT_OF_UNCORRECTED_PASS).text
         assert  error_pass == 'Некорректный пароль'
